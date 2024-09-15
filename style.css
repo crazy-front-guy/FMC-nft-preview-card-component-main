@@ -1,0 +1,81 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main: hsl(217, 54%, 11%); /* (main BG) */
+  --Very-dark-blue-card: hsl(216, 50%, 16%); /* (card BG) */
+  --Very-dark-blue-line: hsl(215, 32%, 27%); /* (line) */
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--Very-dark-blue-main);
+  color: var(--Soft-blue);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 1.25rem;
+  line-height: 1.75rem;
+}
+
+.card {
+  background-color: var(--Very-dark-blue-card);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 336px;
+  box-shadow: 0px 0px 150px var(--Very-dark-blue-card);
+}
+
+.equilibrium,
+.card {
+  border-radius: 15px;
+}
+
+.equilibrium {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.price-and-time {
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px var(--Very-dark-blue-line) solid;
+}
+.eth {
+  color: var(--Cyan);
+}
+
+.time-left {
+  font-weight: 600;
+}
+
+.profile-details {
+  gap: 1.25rem;
+  padding: 7px 0;
+}
+
+.avatar {
+  width: 40px;
+  border: 3px var(--White) solid;
+  border-radius: 100px;
+}
+
+.white {
+  color: var(--White);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
